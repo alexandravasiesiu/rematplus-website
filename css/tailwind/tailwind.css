@@ -831,20 +831,16 @@ video {
   height: 10rem;
 }
 
+.h-44 {
+  height: 11rem;
+}
+
 .h-6 {
   height: 1.5rem;
 }
 
-.h-64 {
-  height: 16rem;
-}
-
 .h-8 {
   height: 2rem;
-}
-
-.h-80 {
-  height: 20rem;
 }
 
 .h-9 {
@@ -905,6 +901,10 @@ video {
 
 .w-52 {
   width: 13rem;
+}
+
+.w-64 {
+  width: 16rem;
 }
 
 .w-8 {
@@ -1680,6 +1680,10 @@ video {
 
   .lg\:h-16 {
     height: 4rem;
+  }
+
+  .lg\:h-80 {
+    height: 20rem;
   }
 
   .lg\:w-1\/2 {
