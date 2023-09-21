@@ -252,7 +252,7 @@ export default function Index() {
               <div className='absolute top-0 left-0 w-full backdrop-blur backdrop-filter bg-gray-900 bg-opacity-50 h-full' />
               <div className='relative container px-4 mx-auto'>
                 <div className='flex flex-wrap -mx-4'>
-                  <div className='w-full md:w-1/3 px-4 mb-6 md:mb-0'>
+                  <div className='w-full lg:w-1/3 px-4 mb-6 lg:mb-0'>
                     <div className='sm:max-w-sm mx-auto flex'>
                       <div className='flex-shrink-0 flex items-center justify-center w-14 lg:w-16 h-14 lg:h-16 lg:mr-8 rounded-md text-green-500 bg-gray-200 bg-opacity-10 mr-4'>
                         <svg
@@ -289,7 +289,7 @@ export default function Index() {
                       </div>
                     </div>
                   </div>
-                  <div className='w-full md:w-1/3 px-4 mb-6 md:mb-0'>
+                  <div className='w-full lg:w-1/3 px-4 mb-6 lg:mb-0'>
                     <div className='flex max-w-xxs sm:max-w-sm mx-auto'>
                       <div className='flex-shrink-0 flex items-center justify-center w-14 lg:w-16 h-14 lg:h-16 mr-4 lg:mr-8 rounded-md text-green-500 bg-gray-200 bg-opacity-10'>
                         <svg
@@ -320,7 +320,7 @@ export default function Index() {
                       </div>
                     </div>
                   </div>
-                  <div className='w-full md:w-1/3 px-4'>
+                  <div className='w-full lg:w-1/3 px-4'>
                     <div className='flex max-w-xxs sm:max-w-sm mx-auto'>
                       <div className='flex-shrink-0 flex items-center justify-center w-14 lg:w-16 h-14 lg:h-16 mr-4 lg:mr-8 rounded-md text-green-500 bg-gray-200 bg-opacity-10'>
                         <svg
@@ -469,7 +469,7 @@ export default function Index() {
                   </p>
                 </div>
               </div>
-              <div className='px-4 flex flex-wrap gap-5 w-1/2 justify-end'>
+              <div className='px-4 flex flex-wrap gap-5 lg:w-1/2 lg:justify-en justify-center'>
                 <img
                   src='images/WhatsApp-Image-2023-09-13-at-14-28-38.jpeg'
                   alt=''
@@ -510,7 +510,7 @@ export default function Index() {
                   sustenabil.
                 </p>
                 <div className='flex flex-wrap justify-center -mx-4'>
-                  <div className='w-full md:w-1/3 lg:w-1/4 px-4 mb-8 lg:mb-0'>
+                  <div className='w-full md:w-1/2 lg:w-1/4 px-4 mb-8 lg:mb-0'>
                     <h2 className='mb-2 text-4xl md:text-5xl font-bold tracking-tighter text-green-600'>
                       10.000{' '}
                     </h2>
@@ -518,7 +518,7 @@ export default function Index() {
                       Tone de deșeuri redirecționate/an
                     </p>
                   </div>
-                  <div className='w-full md:w-1/3 lg:w-1/4 px-4 mb-8 lg:mb-0'>
+                  <div className='w-full md:w-1/2 lg:w-1/4 px-4 mb-8 lg:mb-0'>
                     <h2 className='mb-2 text-4xl md:text-5xl font-bold text-green-600'>
                       100
                     </h2>
@@ -526,7 +526,7 @@ export default function Index() {
                       Hectare de teren curățate/an
                     </p>
                   </div>
-                  <div className='w-full md:w-1/3 lg:w-1/4 px-4 mb-8 lg:mb-0'>
+                  <div className='w-full md:w-1/2 lg:w-1/4 px-4 mb-8 lg:mb-0'>
                     <h2 className='mb-2 text-4xl md:text-5xl font-bold tracking-tighter text-green-600'>
                       +50.000
                     </h2>
@@ -534,7 +534,7 @@ export default function Index() {
                       Hours Saved Annually
                     </p>
                   </div>
-                  <div className='w-full md:w-1/3 lg:w-1/4 px-4'>
+                  <div className='w-full md:w-1/2 lg:w-1/4 px-4'>
                     <h2 className='mb-2 text-4xl md:text-5xl font-bold tracking-tighter text-green-600'>
                       3.500
                     </h2>
@@ -691,7 +691,7 @@ export default function Index() {
               <div className='w-full md:w-1/2 px-4'>
                 <div className='relative max-w-max mx-auto'>
                   <img
-                    className='relative rounded-2xl h-80'
+                    className='relative rounded-2xl lg:h-80 h-44'
                     src='images/grabage-truck.jpeg'
                     alt=''
                   />

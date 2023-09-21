@@ -237,7 +237,7 @@ export default function Contact() {
                 </p>
               </div>
               <div className='flex flex-wrap -mx-3 text-center'>
-                <div className='w-1/2 lg:w-1/3 px-3 mb-12'>
+                <div className='w-full md:w-1/2 lg:w-1/3 px-3 mb-12'>
                   <svg
                     className='mb-6 h-8 w-8 mx-auto text-green-600'
                     xmlns='http://www.w3.org/2000/svg'
@@ -258,7 +258,7 @@ export default function Contact() {
                     <p>Mobil: 0752 172 573</p>
                   </div>
                 </div>
-                <div className='w-1/2 lg:w-1/3 px-3 mb-12'>
+                <div className='w-full md:w-1/2 lg:w-1/3 px-3 mb-12'>
                   <svg
                     className='mb-6 h-8 w-8 mx-auto text-green-600'
                     xmlns='http://www.w3.org/2000/svg'

@@ -236,31 +236,31 @@ export default function Gallery() {
               </p>
             </div>
             <div className='flex flex-wrap -mx-3 mb-6'>
-              <div className='w-full lg:w-1/2 flex flex-wrap px-3 mb-6'>
-                <div className='w-1/2 h-64 pr-3 pb-3'>
+              <div className='w-full lg:w-1/2 flex flex-wrap px-3 lg:mb-0 mb-6'>
+                <div className='w-1/2 w-64 pr-3 pb-3'>
                   <img
-                    className='h-full object-cover rounded'
+                    className='w-full object-cover rounded'
                     src='images/WhatsApp-Image-2023-09-13-at-14-28-41-1.jpeg'
                     alt=''
                   />
                 </div>
-                <div className='w-1/2 h-64 pl-3 pb-3'>
+                <div className='w-1/2 w-64 pl-3 pb-3'>
                   <img
-                    className='h-full object-cover rounded'
+                    className='w-full object-cover rounded'
                     src='images/recycling-sign2-jpg-1695033687039.webp'
                     alt=''
                   />
                 </div>
-                <div className='w-1/2 h-64 pr-3 pt-3'>
+                <div className='w-1/2 w-64 pr-3 pt-3'>
                   <img
-                    className='h-full object-cover rounded'
+                    className='w-full object-cover rounded'
                     src='images/WhatsApp-Image-2023-09-13-at-14-28-38.jpeg'
                     alt=''
                   />
                 </div>
-                <div className='w-1/2 h-64 pl-3 pt-3'>
+                <div className='w-1/2 w-64 pl-3 pt-3'>
                   <img
-                    className='h-full object-cover rounded'
+                    className='w-full object-cover rounded'
                     src='images/recycle-2022-03-04-01-49-58-utc.jpg'
                     alt=''
                   />
@@ -274,7 +274,7 @@ export default function Gallery() {
                 />
               </div>
             </div>
-            <div className='flex flex-wrap -mx-3 mb-6'>
+            <div className='flex flex-wrap -mx-3 lg:mb-0 mb-6'>
               <div className='w-full lg:w-1/2 px-3 order-last lg:order-first mt-6 lg:mt-0 flex justify-center'>
                 <img
                   className='object-cover rounded w-96 border-4 border-green-600'
@@ -283,30 +283,30 @@ export default function Gallery() {
                 />
               </div>
               <div className='w-full lg:w-1/2 flex flex-wrap px-3'>
-                <div className='w-1/2 h-64 pr-3 pb-3'>
+                <div className='w-1/2 w-64 pr-3 pb-3'>
                   <img
-                    className='h-full object-cover rounded'
+                    className='w-full object-cover rounded'
                     src='images/WhatsApp-Image-2023-09-13-at-14-28-40.jpeg'
                     alt=''
                   />
                 </div>
-                <div className='w-1/2 h-64 pl-3 pb-3'>
+                <div className='w-1/2 w-64 pl-3 pb-3'>
                   <img
-                    className='h-full object-cover rounded'
+                    className='w-full object-cover rounded'
                     src='images/WhatsApp-Image-2023-09-13-at-14-28-38-1.jpeg'
                     alt=''
                   />
                 </div>
-                <div className='w-1/2 h-64 pr-3 pt-3'>
+                <div className='w-1/2 w-64 pr-3 pt-3'>
                   <img
-                    className='h-full object-cover rounded'
+                    className='w-full object-cover rounded'
                     src='images/WhatsApp-Image-2023-09-13-at-14-28-39.jpeg'
                     alt=''
                   />
                 </div>
-                <div className='w-1/2 h-64 pl-3 pt-3'>
+                <div className='w-1/2 w-64 pl-3 pt-3'>
                   <img
-                    className='h-full object-cover rounded'
+                    className='w-full object-cover rounded'
                     src='images/sorted-trash-of-cardboard-glass-bottles-polyethy-2022-12-16-17-53-07-utc-jpg-1695033748162.webp'
                     alt=''
                   />
