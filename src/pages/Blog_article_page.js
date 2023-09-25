@@ -376,11 +376,10 @@ export default function BlogArticlePage() {
                           E-mail: nume@office.com
                         </a>
                       </li>
-                      <li contentEditable='false'>
+                      <li>
                         <a
                           className='inline-block font-medium text-coolGray-500 flex justify-end'
                           href='#'
-                          contentEditable='false'
                         >
                           Adresă:
                         </a>
@@ -397,7 +396,6 @@ export default function BlogArticlePage() {
                     <ul className='flex-col justify-end'>
                       <li
                         className='mb-4 flex justify-end'
-                        contentEditable='false'
                       >
                         <a className='text-coolGray-500 font-medium' href='#'>
                           Galerie

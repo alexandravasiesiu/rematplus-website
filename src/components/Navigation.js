@@ -20,14 +20,16 @@ export function Navigation() {
               onClick={() => {
                 navigate("/");
               }}
+              href="#"
             >
-              <img className="h-10" src={logo} alt="" />
+              <img className="h-10" src={logo} />
             </a>
             <ul className="hidden xl:flex ml-24">
               <li className="mr-12">
                 <a
                   className="hover:text-coolGray-900 font-medium text-green-600"
                   onClick={() => navigate("/gallery")}
+                  href="#"
                 >
                   Galerie
                 </a>
@@ -36,6 +38,7 @@ export function Navigation() {
                 <a
                   className="hover:text-coolGray-900 font-medium text-green-600"
                   onClick={() => navigate("/blog")}
+                  href="#"
                 >
                   Articole
                 </a>
@@ -44,6 +47,7 @@ export function Navigation() {
                 <a
                   className="hover:text-coolGray-900 font-medium text-green-600"
                   onClick={() => navigate("/services")}
+                  href="#"
                 >
                   Servicii
                 </a>
@@ -52,6 +56,7 @@ export function Navigation() {
                 <a
                   className="hover:text-coolGray-900 font-medium text-green-600"
                   onClick={() => navigate("/contact")}
+                  href="#"
                 >
                   Contact
                 </a>
@@ -115,7 +120,7 @@ export function Navigation() {
                       href="#"
                       className="block px-4 py-2 font-medium hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
-                     Engleză
+                      Engleză
                     </a>
                   </li>
                   <li>
@@ -168,6 +173,7 @@ export function Navigation() {
                 onClick={() => {
                   navigate("/");
                 }}
+                href="#"
               >
                 <img className="h-8" src={logo} alt="" />
               </a>

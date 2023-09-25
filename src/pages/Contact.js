@@ -51,8 +51,8 @@ export default function Contact() {
                   </svg>
                   <div className='leading-relaxed'>
                     <span className='text-sm text-coolGray-500'>Telefon</span>
-                    <p>Tel/Fax: 0258 842 404</p>
-                    <p>Mobil: 0752 172 573</p>
+                    <p> 0749/662.007</p>
+                    <p> 0751/041.087</p>
                   </div>
                 </div>
                 <div className='w-full md:w-1/2 lg:w-1/3 px-3 mb-12'>
@@ -72,8 +72,7 @@ export default function Contact() {
                   </svg>
                   <div className='leading-relaxed'>
                     <span className='text-sm text-coolGray-500'>E-mail</span>
-                    <p>info@example.com</p>
-                    <p>nume@office.com</p>
+                    <p>office@rematplus.ro</p>
                   </div>
                 </div>
                 <div className='w-full lg:w-1/3 px-3 mb-12'>
@@ -100,7 +99,7 @@ export default function Contact() {
                   <div className='leading-relaxed'>
                     <span className='text-sm text-coolGray-500'>Adresă</span>
                     <p>Sântimbru, Șos. Națională,</p>
-                    <p>nr.15</p>
+                    <p>nr.15, județul Alba</p>
                   </div>
                 </div>
               </div>

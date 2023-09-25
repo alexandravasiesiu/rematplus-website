@@ -30,7 +30,6 @@ export default function Blog() {
               </h3>
               <p
                 className='leading-loose text-xl text-coolGray-500'
-                contentEditable='true'
               >
                 Fii Informat și Contribuie la un Impact Mai Verde
               </p>
