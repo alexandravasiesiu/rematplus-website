@@ -67,7 +67,7 @@ export default function Services() {
                   mollit anim id est laborum.
                 </p>
               </div>
-              <div className='w-full md:w-1/2 md:w-1/3 mb-8 p-4 bg-darkCoolGray-50 rounded-2xl'>
+              <div className='w-full md:w-1/2 md:w-1/3 mb-8 bg-darkCoolGray-50 rounded-2xl p-4'>
                 <div className='inline-flex items-center justify-center mb-4 w-12 h-12 text-xl text-white bg-green-600 font-semibold rounded-full'>
                   3
                 </div>
@@ -83,11 +83,11 @@ export default function Services() {
                   mollit anim id est laborum.
                 </p>
               </div>
-              <div className='w-full md:w-1/2 md:w-1/3 mb-8 md:mb-0 bg-darkCoolGray-50 rounded-2xl p-4'>
+              <div className='w-full md:w-1/2 md:w-1/3 mb-8 bg-darkCoolGray-50 rounded-2xl p-4'>
                 <div className='inline-flex items-center justify-center mb-4 w-12 h-12 text-xl text-white bg-green-600 font-semibold rounded-full'>
                   4
                 </div>
-                <h3 className='mb-2 text-xl font-bold'>Serviciul 4 </h3>
+                <h3 className='mb-2 text-xl font-bold'>Serviciul 4</h3>
                 <p className='font-medium text-coolGray-500'>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.

@@ -3,6 +3,7 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { useNavigate } from 'react-router-dom';
 import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
+import { LocationMap } from '../components/LocationMap';
 
 const meta = {
   title: '',
@@ -25,6 +26,7 @@ export default function Contact() {
         <section className='py-20'>
           <div className='container px-4 mx-auto'>
             <div className='max-w-2xl lg:max-w-3xl mx-auto'>
+              <LocationMap />
               <div className='mb-12 text-center'>
                 <h2 className='text-3xl md:text-4xl mt-2 mb-4 font-bold font-heading text-green-600'>
                   Contactează-ne
@@ -104,7 +106,7 @@ export default function Contact() {
                 </div>
               </div>
               <div>
-                <form>
+                <form action="https://formsubmit.co/office@rematplus.ro" method="POST">
                   <div className='flex flex-wrap mb-4 -mx-3'>
                     <div className='w-full lg:w-1/2 px-3 mb-4 lg:mb-0'>
                       <div className='mb-4'>
@@ -112,6 +114,7 @@ export default function Contact() {
                           className='w-full p-4 text-xs font-semibold leading-none rounded outline-none bg-coolGray-50'
                           type='text'
                           placeholder='Subiect'
+                          name="Subiect"
                         />
                       </div>
                       <div className='mb-4'>
@@ -119,13 +122,15 @@ export default function Contact() {
                           className='w-full p-4 text-xs font-semibold leading-none rounded outline-none bg-gray-50'
                           type='text'
                           placeholder='Nume'
+                          nam="Nume"
                         />
                       </div>
                       <div className='mb-4'>
                         <input
                           className='w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none bg-gray-50'
                           type='email'
-                          placeholder='name@example.com'
+                          placeholder='E-mail'
+                          name="E-mail"
                         />
                       </div>
                       <div>
@@ -147,6 +152,7 @@ export default function Contact() {
                         className='w-full h-full p-4 text-xs font-semibold leading-none resize-none bg-blueGray-50 rounded outline-none bg-gray-50'
                         type='text'
                         placeholder='Mesaj...'
+                        name="Mesaj"
                         defaultValue={''}
                       />
                     </div>

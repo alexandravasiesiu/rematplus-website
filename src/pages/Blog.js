@@ -56,7 +56,7 @@ export default function Blog() {
                   className='inline-flex items-center text-base md:text-lg text-green-300 hover:text-green-600 font-semibold'
                   href='#'
                 >
-                  <span className='mr-3'>Read Post</span>
+                  <span className='mr-3'>Citește</span>
                   <svg
                     width={8}
                     height={10}
@@ -92,7 +92,7 @@ export default function Blog() {
                   className='inline-flex items-center text-base md:text-lg text-green-300 hover:text-green-600 font-semibold'
                   href='#'
                 >
-                  <span className='mr-3'>Read Post</span>
+                  <span className='mr-3'>Citește</span>
                   <svg
                     width={8}
                     height={10}
@@ -128,7 +128,7 @@ export default function Blog() {
                   className='inline-flex items-center text-base md:text-lg text-green-300 hover:text-green-600 font-semibold'
                   href='#'
                 >
-                  <span className='mr-3'>Read Post</span>
+                  <span className='mr-3'>Citește</span>
                   <svg
                     width={8}
                     height={10}
@@ -164,7 +164,7 @@ export default function Blog() {
                   className='inline-flex items-center text-base md:text-lg text-green-300 hover:text-green-600 font-semibold'
                   href='#'
                 >
-                  <span className='mr-3'>Read Post</span>
+                  <span className='mr-3'>Citește</span>
                   <svg
                     width={8}
                     height={10}
@@ -200,7 +200,7 @@ export default function Blog() {
                   className='inline-flex items-center text-base md:text-lg text-green-300 hover:text-green-600 font-semibold'
                   href='#'
                 >
-                  <span className='mr-3'>Read Post</span>
+                  <span className='mr-3'>Citește</span>
                   <svg
                     width={8}
                     height={10}
@@ -236,7 +236,7 @@ export default function Blog() {
                   className='inline-flex items-center text-base md:text-lg text-green-300 hover:text-green-600 font-semibold'
                   href='#'
                 >
-                  <span className='mr-3'>Read Post</span>
+                  <span className='mr-3'>Citește</span>
                   <svg
                     width={8}
                     height={10}
@@ -275,18 +275,6 @@ export default function Blog() {
                 href='#'
               >
                 1
-              </a>
-              <a
-                className='inline-flex items-center justify-center w-11 h-11 text-coolGray-300 hover:text-green-500 font-medium border-r border-coolGray-100'
-                href='#'
-              >
-                2
-              </a>
-              <a
-                className='inline-flex items-center justify-center w-11 h-11 text-coolGray-300 hover:text-green-500 font-medium border-r border-coolGray-100'
-                href='#'
-              >
-                3
               </a>
               <a
                 className='inline-flex items-center justify-center w-11 h-11 text-coolGray-300 hover:text-coolGray-400 font-medium'
