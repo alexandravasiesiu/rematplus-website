@@ -3,7 +3,8 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import { useNavigate } from "react-router-dom";
 import { Navigation } from "../components/Navigation";
 import { Footer } from "../components/Footer";
-import background from "../assets/images/background-image.jpg"
+import background from "../assets/images/background-image.jpg";
+import CookieBanner from "../components/CookieBanner";
 
 const meta = {
   title: "",
@@ -22,24 +23,24 @@ export default function Index() {
         <Helmet {...meta}></Helmet>
       </HelmetProvider>
       <>
+        {localStorage.getItem("cookie_consent") ? null : <CookieBanner />}
         <Navigation />
 
         <section>
           <div
             className="pt-24 bg-cover"
             style={{
-              backgroundImage:
-              `url(${background})`,
+              backgroundImage: `url(${background})`,
             }}
           >
             <div className="container px-4 mx-auto">
-              <div className="flex flex-wrap items-center -mx-4 pt-32 pb-32">
+              <div className="flex flex-wrap items-center -mx-4 pt-32 pb-32 justify-end">
                 <div className="w-full lg:w-1/2 px-4 mb-6 lg:mb-0">
                   <div className="max-w-md lg:max-w-none">
-                    <h1 className="font-heading text-4xl lg:text-5xl text-green-600 mb-6 text-center font-medium">
+                    <h1 className="font-heading text-4xl lg:text-5xl text-white mb-6 text-center font-medium">
                       Inovație în Gestionarea Deșeurilor
                     </h1>
-                    <p className="mb-2 leading-relaxed text-coolGray-500 text-xl text-center">
+                    <p className="mb-2 leading-relaxed text-yellow-50 text-xl text-center">
                       Partenerul Tău de Încredere în Reciclarea și Gestionarea
                       Responsabilă a Deșeurilor pentru un Mediu Curat și Sănătos
                     </p>
@@ -215,14 +216,15 @@ export default function Index() {
                     />
                   </svg>
                   <p className="mb-5 text-lg font-medium leading-7 text-coolGray-500 w-full">
-                    <b class="text-coolGray-900">Logistic,</b> realizăm transporturile deșeurilor cu mijloace
-                    auto și personal autorizat, cu respectarea reglementărilor
-                    legale în vigoare privind transportul deșeurilor. Dispunem
-                    de o gamă variată de autocamionete și autocamioane, dotate
-                    și echipate corespunzător întocmai pentru a gestiona orice
-                    flux de deșeu reciclabil este necesar a fi colectat. Acestea
-                    colectează în containere de 16 mc sau 32 mc, sau chiar unde
-                    locatia consideră necesar, prescontainer de 22 mc - acționat
+                    <b class="text-coolGray-900">Logistic,</b> realizăm
+                    transporturile deșeurilor cu mijloace auto și personal
+                    autorizat, cu respectarea reglementărilor legale în vigoare
+                    privind transportul deșeurilor. Dispunem de o gamă variată
+                    de autocamionete și autocamioane, dotate și echipate
+                    corespunzător întocmai pentru a gestiona orice flux de deșeu
+                    reciclabil este necesar a fi colectat. Acestea colectează în
+                    containere de 16 mc sau 32 mc, sau chiar unde locatia
+                    consideră necesar, prescontainer de 22 mc - acționat
                     electric.
                   </p>
                 </div>
@@ -242,11 +244,12 @@ export default function Index() {
                     />
                   </svg>
                   <p className="text-lg font-medium leading-7 text-coolGray-500 mb-5 w-full">
-                    <b class="text-coolGray-900">Gama de deșeuri colectate</b> este vastă, cuprinzând sectorul
-                    metalelor feroase și neferoase, al echipamentelor electrice
-                    si electronice, precum și deșeurile din carton/hârtie, lemn,
-                    plastic (provenit din diverse surse, inclusiv polistiren)
-                    sau sticlă. Pentru deșeurile care provin din ambalaje,
+                    <b class="text-coolGray-900">Gama de deșeuri colectate</b>{" "}
+                    este vastă, cuprinzând sectorul metalelor feroase și
+                    neferoase, al echipamentelor electrice si electronice,
+                    precum și deșeurile din carton/hârtie, lemn, plastic
+                    (provenit din diverse surse, inclusiv polistiren) sau
+                    sticlă. Pentru deșeurile care provin din ambalaje,
                     personalul nostru calificat oferă servicii de trasabilitate,
                     îndeplinind obligațiile către Fondul de Mediu.
                   </p>
@@ -267,16 +270,16 @@ export default function Index() {
                     />
                   </svg>
                   <p className="text-lg font-medium leading-7 text-coolGray-500 mb-5 w-full">
-                    <b class="text-coolGray-900">Depozitarea și procesarea</b> se realizează în spații special
-                    amenajate, autorizate în acest sens, din ambele centre de
-                    colectare pe care le avem în acest moment, respectându-se
-                    toate prevederile în acest sens. Centru principal de
-                    colectare este in Sântimbru - Alba, aflat la 3 KM de A10, cu
-                    o suprafată betonată de 30.000 mp neacoperită și o hală
-                    acoperită de 8.000 mp, iar cel secundar în Ocna Mureș.
-                    Procesele noastre de reciclare sunt eficiente și
-                    responsabile, contribuind la reducerea cantității de deșeuri
-                    care ajung în depozitele de gunoi.
+                    <b class="text-coolGray-900">Depozitarea și procesarea</b>{" "}
+                    se realizează în spații special amenajate, autorizate în
+                    acest sens, din ambele centre de colectare pe care le avem
+                    în acest moment, respectându-se toate prevederile în acest
+                    sens. Centru principal de colectare este in Sântimbru -
+                    Alba, aflat la 3 KM de A10, cu o suprafată betonată de
+                    30.000 mp neacoperită și o hală acoperită de 8.000 mp, iar
+                    cel secundar în Ocna Mureș. Procesele noastre de reciclare
+                    sunt eficiente și responsabile, contribuind la reducerea
+                    cantității de deșeuri care ajung în depozitele de gunoi.
                   </p>
                 </div>
                 <div className="flex">
@@ -295,9 +298,10 @@ export default function Index() {
                     />
                   </svg>
                   <p className="text-lg font-medium leading-7 text-coolGray-500 w-full">
-                    <b class="text-coolGray-900">Valorificarea finală,</b> cea mai importantă etapă din circuitul
-                    unui deșeu, este transmis direct catre reciclatori finali,
-                    unde reintră în producția produsului finit.
+                    <b class="text-coolGray-900">Valorificarea finală,</b> cea
+                    mai importantă etapă din circuitul unui deșeu, este transmis
+                    direct catre reciclatori finali, unde reintră în producția
+                    produsului finit.
                   </p>
                 </div>
               </div>
@@ -441,29 +445,33 @@ export default function Index() {
                   </p>
                   <ol className="list-decimal">
                     <li className="text-lg leading-7 text-yellow-50 mb-5">
-                      <b class="text-yellow-200">Separarea deșeurilor pe fracții:</b> Deși aparent poate
-                      fi considerat un gest dificil de implementat, țineți cont
-                      de faptul că separarea deșeurilor reduce cantitatea de
-                      deșeuri din gropile de gunoi, economisind astfel spațiu.
-                      Poluarea aerului și a apei poate fi redusă considerabil
-                      atunci când deșeurile periculoase sunt separate și tratate
-                      separat.
+                      <b class="text-yellow-200">
+                        Separarea deșeurilor pe fracții:
+                      </b>{" "}
+                      Deși aparent poate fi considerat un gest dificil de
+                      implementat, țineți cont de faptul că separarea deșeurilor
+                      reduce cantitatea de deșeuri din gropile de gunoi,
+                      economisind astfel spațiu. Poluarea aerului și a apei
+                      poate fi redusă considerabil atunci când deșeurile
+                      periculoase sunt separate și tratate separat.
                     </li>
                     <li className="text-lg leading-7 text-yellow-50 mb-5">
-                      <b class="text-yellow-200">Alegerea produselor biodegradabile:</b> Deșeurile
-                      biodegradabile pot fi descompuse în mod natural. De
-                      obicei, produsele sunt fabricate astfel încât să se poată
-                      degrada atunci când sunt expuse la radiațiile ultraviolete
-                      ale soarelui, enzime, bacterii, vânt sau apă.
+                      <b class="text-yellow-200">
+                        Alegerea produselor biodegradabile:
+                      </b>{" "}
+                      Deșeurile biodegradabile pot fi descompuse în mod natural.
+                      De obicei, produsele sunt fabricate astfel încât să se
+                      poată degrada atunci când sunt expuse la radiațiile
+                      ultraviolete ale soarelui, enzime, bacterii, vânt sau apă.
                     </li>
                     <li className="text-lg leading-7 text-yellow-50 mb-5">
-                      <b class="text-yellow-200">Compostul:</b> Peste 60% din gunoiul aruncat în gropile
-                      de gunoi este format în principal din deșeuri organice
-                      care pot fi descompuse în comunitate sau în case. Gunoiul
-                      produs în fiecare gospodărie este format din deșeuri
-                      organice care pot fi folosite pentru compostare.
-                      Compostarea transformă deșeurile în nutrient foarte
-                      valoroși pentru sol.
+                      <b class="text-yellow-200">Compostul:</b> Peste 60% din
+                      gunoiul aruncat în gropile de gunoi este format în
+                      principal din deșeuri organice care pot fi descompuse în
+                      comunitate sau în case. Gunoiul produs în fiecare
+                      gospodărie este format din deșeuri organice care pot fi
+                      folosite pentru compostare. Compostarea transformă
+                      deșeurile în nutrient foarte valoroși pentru sol.
                     </li>
                   </ol>
                   <p className="mb-5 text-lg leading-7 text-yellow-50">

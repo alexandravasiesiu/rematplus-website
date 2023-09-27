@@ -71,30 +71,22 @@ export function Footer() {
                 </h3>
                 <ul>
                   <li className="mb-4">
-                    <p
-                      className="inline-block font-medium text-coolGray-500 flex"
-                    >
+                    <p className="inline-block font-medium text-coolGray-500 flex">
                       Telefon: 0749/662.007{" "}
                     </p>
                   </li>
                   <li className="mb-4">
-                    <p
-                      className="inline-block font-medium text-coolGray-500 flex"
-                    >
+                    <p className="inline-block font-medium text-coolGray-500 flex">
                       Telefon: 0751/041.087
                     </p>
                   </li>
                   <li className="mb-4">
-                    <p
-                      className="inline-block font-medium text-coolGray-500 flex"
-                    >
+                    <p className="inline-block font-medium text-coolGray-500 flex">
                       E-mail: office@rematplus.ro
                     </p>
                   </li>
                   <li>
-                    <p
-                      className="inline-block font-medium text-coolGray-500 flex"
-                    >
+                    <p className="inline-block font-medium text-coolGray-500 flex">
                       Adresă:
                     </p>
                   </li>
@@ -105,7 +97,11 @@ export function Footer() {
               </div>
             </div>
             <div className="px-4 mb-16 lg:mb-0 md:w-1/2 w-full flex md:justify-end justify-center">
-              <a className="inline-block mb-4" onClick={() => navigate("/")} href="#">
+              <a
+                className="inline-block mb-4"
+                onClick={() => navigate("/")}
+                href="#"
+              >
                 <img className="h-10" src={logo} alt="" />
               </a>
             </div>
@@ -121,7 +117,12 @@ export function Footer() {
             </div>
             <div className="w-full md:w-1/2">
               <div className="flex flex-wrap md:justify-end -mx-5">
-                <div className="px-5">
+                <div class="sm:w-auto flex items-center font-medium">
+                  <a class="text-coolGray-900" href="#" onClick={() => ( navigate('/privacypolicy') )}>
+                    Politică de confidențialitate
+                  </a>
+                </div>
+                <div className="px-5 flex items-center">
                   <a
                     className="inline-block text-coolGray-900 hover:text-coolGray-800"
                     href="https://www.facebook.com/rematplus"

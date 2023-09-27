@@ -10,6 +10,7 @@ import BlogPage from './pages/Blog.js';
 import ContactPage from './pages/Contact.js';
 import ServicesPage from './pages/Services.js';
 import BlogArticlePagePage from './pages/Blog_article_page.js';
+import PrivacyPolicyPage from './pages/PrivacyPolicy.js';
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
       <Route path="/services" element={<ServicesPage />} />
          
       <Route path="/blogarticlepage" element={<BlogArticlePagePage />} />
+
+      <Route path="/privacypolicy" element={<PrivacyPolicyPage />} />
     </Routes>
   );
 }
