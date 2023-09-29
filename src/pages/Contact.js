@@ -136,19 +136,6 @@ export default function Contact() {
                           name="E-mail"
                         />
                       </div>
-                      <div>
-                        <label className='flex px-2 bg-blueGray-50 rounded'>
-                          <input
-                            className='hidden'
-                            type='file'
-                            placeholder='Choose file..'
-                            name='Choose file'
-                          />
-                          <div className='my-1 ml-auto px-4 py-3 text-xs text-white font-semibold leading-none bg-blueGray-500 hover:bg-blueGray-600 rounded cursor-pointer'>
-                            Browse
-                          </div>
-                        </label>
-                      </div>
                     </div>
                     <div className='w-full lg:w-1/2 px-3'>
                       <textarea
