@@ -3,6 +3,7 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { useNavigate } from 'react-router-dom';
 import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
+import { useTranslation } from 'react-i18next';
 
 const meta = {
   title: '',
@@ -14,6 +15,7 @@ const meta = {
 
 export default function Services() {
   const navigate = useNavigate();
+  const { t } = useTranslation();
   
   return (
     <React.Fragment>
@@ -27,10 +29,10 @@ export default function Services() {
             <div className='flex flex-wrap items-center -mx-4 mb-16'>
               <div className='w-full px-4 mb-16 md:mb-0 text-center'>
                 <h2 className='text-3xl md:text-4xl mt-2 mb-4 font-bold font-heading text-green-600'>
-                  Serviciile Noastre de Reciclare
+                  {t('services.title')}
                 </h2>
                 <p className='leading-loose text-xl text-coolGray-500'>
-                  Soluții Complete pentru un Viitor Mai Verde
+                  {t('services.subtitle')}
                 </p>
               </div>
             </div>

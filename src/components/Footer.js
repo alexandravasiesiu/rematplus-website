@@ -1,8 +1,10 @@
 import { useNavigate } from "react-router-dom";
 import logo from "../assets/images/remat-plus-logo-transparent.png";
+import { useTranslation } from 'react-i18next';
 
 export function Footer() {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   return (
     <section className="bg-white">
@@ -24,7 +26,7 @@ export function Footer() {
             <div className="px-4 mb-16 lg:mb-0 md:w-1/2 w-full flex">
               <div className="pr-10 mb-16 lg:mb-0">
                 <h3 className="mb-5 text-lg font-bold text-coolGray-900 ">
-                  Meniu
+                {t('footer.menu')}
                 </h3>
                 <ul className="flex-col">
                   <li className="mb-4 flex">
@@ -33,25 +35,25 @@ export function Footer() {
                       onClick={() => navigate("/gallery")}
                       href="#"
                     >
-                      Galerie
+                      {t('menu.gallery')}
                     </a>
                   </li>
                   <li className="mb-4">
                     <a
                       className="inline-block text-coolGray-500 hover:text-coolGray-900 font-medium"
-                      onClick={() => navigate("/blog")}
+                      // onClick={() => navigate("/blog")}
                       href="#"
                     >
-                      Articole
+                      {t('menu.articles')}
                     </a>
                   </li>
                   <li className="mb-4">
                     <a
                       className="inline-block text-coolGray-500 hover:text-coolGray-900 font-medium"
-                      onClick={() => navigate("/services")}
+                      // onClick={() => navigate("/services")}
                       href="#"
                     >
-                      Servicii
+                      {t('menu.services')}
                     </a>
                   </li>
                   <li className="mb-4">
@@ -60,24 +62,24 @@ export function Footer() {
                       onClick={() => navigate("/contact")}
                       href="#"
                     >
-                      Contact
+                      {t('menu.contact')}
                     </a>
                   </li>
                 </ul>
               </div>
               <div className="px-4 mb-16 lg:mb-0">
                 <h3 className="mb-5 text-lg font-bold text-coolGray-900 flex">
-                  Contact
+                  {t('footer.contact')}
                 </h3>
                 <ul>
                   <li className="mb-4">
                     <p className="inline-block font-medium text-coolGray-500 flex">
-                      Telefon: 0749/662.007{" "}
+                    {t('contact.phone')}: 0749/662.007{" "}
                     </p>
                   </li>
                   <li className="mb-4">
                     <p className="inline-block font-medium text-coolGray-500 flex">
-                      Telefon: 0751/041.087
+                    {t('contact.phone')}: 0751/041.087
                     </p>
                   </li>
                   <li className="mb-4">
@@ -87,7 +89,7 @@ export function Footer() {
                   </li>
                   <li>
                     <p className="inline-block font-medium text-coolGray-500 flex">
-                      Adresă:
+                      {t('contact.address')}:
                     </p>
                   </li>
                   <span className="inline-block font-medium text-coolGray-500 flex mb-4">
@@ -112,14 +114,14 @@ export function Footer() {
           <div className="flex flex-wrap items-center py-12">
             <div className="w-full md:w-1/2 mb-6 md:mb-0">
               <p className="font-medium text-coolGray-900">
-                © 2023 Remat Plus. Toate drepturile rezervate.
+                {t('footer.rights')}
               </p>
             </div>
             <div className="w-full md:w-1/2">
               <div className="flex flex-wrap md:justify-end -mx-5">
                 <div class="sm:w-auto flex items-center font-medium">
                   <a class="text-coolGray-900" href="#" onClick={() => ( navigate('/privacypolicy') )}>
-                    Politică de confidențialitate
+                    {t('footer.privacy')}
                   </a>
                 </div>
                 <div className="px-5 flex items-center">

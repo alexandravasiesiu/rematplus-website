@@ -1,15 +1,14 @@
 import { useNavigate } from "react-router-dom";
 import logo from "../assets/images/remat-plus-logo-transparent.png";
 import { useState } from "react";
-import iconRo from "../assets/images/icon-ro.png";
+import { LanguageSwitcher } from "./LanguageSwitcher";
+import { useTranslation } from 'react-i18next';
 
 export function Navigation() {
   const navigate = useNavigate();
+  const { t } = useTranslation();
+
   const [menuOpen, setMenuOpen] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen);
-  };
 
   return (
     <>
@@ -31,25 +30,25 @@ export function Navigation() {
                   onClick={() => navigate("/gallery")}
                   href="#"
                 >
-                  Galerie
+                  {t('menu.gallery')}
                 </a>
               </li>
               <li className="mr-12">
                 <a
                   className="hover:text-coolGray-900 font-medium text-green-600"
-                  onClick={() => navigate("/blog")}
+                  // onClick={() => navigate("/blog")}
                   href="#"
                 >
-                  Articole
+                    {t('menu.articles')}
                 </a>
               </li>
               <li className="mr-12">
                 <a
                   className="hover:text-coolGray-900 font-medium text-green-600"
-                  onClick={() => navigate("/services")}
+                  // onClick={() => navigate("/services")}
                   href="#"
                 >
-                  Servicii
+                    {t('menu.services')}
                 </a>
               </li>
               <li>
@@ -58,83 +57,12 @@ export function Navigation() {
                   onClick={() => navigate("/contact")}
                   href="#"
                 >
-                  Contact
+                    {t('menu.contact')}
                 </a>
               </li>
             </ul>
           </div>
-          <div className="hidden xl:flex items-center flex flex-wrap gap-2 relative">
-            <button
-              id="dropdownDefaultButton"
-              data-dropdown-toggle="dropdown"
-              className="font-medium rounded-lg text-sm px-5 text-center inline-flex items-center py-2 border-green-600 border-2 text-green-600"
-              type="button"
-              onClick={toggleDropdown}
-            >
-              <div className="flex items-center space-x-2">
-                <img
-                  src={iconRo}
-                  alt=""
-                  className="rounded shadow-md mr-2 w-5"
-                />
-                <span>Română</span>
-              </div>
-              <svg
-                className={`w-2.5 h-2.5 ml-2.5 ${
-                  isOpen ? "transform rotate-180" : ""
-                }`}
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 10 6"
-              >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="m1 1 4 4 4-4"
-                ></path>
-              </svg>
-            </button>
-            {/* Dropdown menu */}
-            {isOpen && (
-              <div
-                id="dropdown"
-                className="absolute top-12 left-0 z-50 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
-              >
-                <ul
-                  className="py-2 text-sm text-gray-700 dark:text-gray-200"
-                  aria-labelledby="dropdownDefaultButton"
-                >
-                  <li>
-                    <a
-                      href="#"
-                      className="block px-4 py-2 font-medium hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                    >
-                      Română
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="block px-4 py-2 font-medium hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                    >
-                      Engleză
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="block px-4 py-2 font-medium hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                    >
-                      Germană
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            )}
-          </div>
+         <LanguageSwitcher />
           <button
             className="navbar-burger self-center xl:hidden"
             onClick={() => setMenuOpen(true)}
@@ -185,27 +113,27 @@ export function Navigation() {
                       navigate("/gallery");
                     }}
                   >
-                    Galerie
+                    {t('menu.gallery')}
                   </a>
                 </li>
                 <li>
                   <a
                     className="block py-3 px-4 hover:text-coolGray-900 font-medium text-green-600 hover:bg-coolGray-50 rounded-md"
-                    onClick={() => {
-                      navigate("/blog");
-                    }}
+                    // onClick={() => {
+                    //   navigate("/blog");
+                    // }}
                   >
-                    Articole
+                    {t('menu.articles')}
                   </a>
                 </li>
                 <li>
                   <a
                     className="block py-3 px-4 hover:text-coolGray-900 font-medium text-green-600 hover:bg-coolGray-50 rounded-md"
-                    onClick={() => {
-                      navigate("/services");
-                    }}
+                    // onClick={() => {
+                    //   navigate("/services");
+                    // }}
                   >
-                    Servicii
+                    {t('menu.services')}
                   </a>
                 </li>
                 <li>
@@ -215,7 +143,7 @@ export function Navigation() {
                       navigate("/");
                     }}
                   >
-                    Contact
+                    {t('menu.contact')}
                   </a>
                 </li>
               </ul>

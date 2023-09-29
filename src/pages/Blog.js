@@ -3,6 +3,7 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { useNavigate } from 'react-router-dom';
 import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
+import { useTranslation } from 'react-i18next';
 
 const meta = {
   title: '',
@@ -14,6 +15,7 @@ const meta = {
 
 export default function Blog() {
   const navigate = useNavigate();
+  const { t } = useTranslation();
   
   return (
     <React.Fragment>
@@ -26,12 +28,12 @@ export default function Blog() {
           <div className='container px-4 mx-auto'>
             <div className='md:max-w-5xl mx-auto mb-16 text-center'>
               <h3 className='text-3xl md:text-4xl mt-2 mb-4 font-bold font-heading text-green-600'>
-                Informații despre Reciclare
+                {t('blog.title')}
               </h3>
               <p
                 className='leading-loose text-xl text-coolGray-500'
               >
-                Fii Informat și Contribuie la un Impact Mai Verde
+                {t('blog.subtitle')}
               </p>
             </div>
             <div className='flex flex-wrap -mx-4 mb-12 md:mb-20'>

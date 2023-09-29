@@ -4,6 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
 import { LocationMap } from '../components/LocationMap';
+import { useTranslation } from 'react-i18next';
+
 
 const meta = {
   title: '',
@@ -15,6 +17,7 @@ const meta = {
 
 export default function Contact() {
   const navigate = useNavigate();
+  const { t } = useTranslation();
   
   return (
     <React.Fragment>
@@ -29,10 +32,10 @@ export default function Contact() {
               <LocationMap />
               <div className='mb-12 text-center'>
                 <h2 className='text-3xl md:text-4xl mt-2 mb-4 font-bold font-heading text-green-600'>
-                  Contactează-ne
+                  {t('contact.title')}
                 </h2>
                 <p className='leading-loose text-xl text-coolGray-500'>
-                  Răspundem întrebărilor și nevoilor tale
+                {t('contact.subtitle')}
                 </p>
               </div>
               <div className='flex flex-wrap -mx-3 text-center'>
@@ -52,7 +55,7 @@ export default function Contact() {
                     />
                   </svg>
                   <div className='leading-relaxed'>
-                    <span className='text-sm text-coolGray-500'>Telefon</span>
+                    <span className='text-sm text-coolGray-500'>{t('contact.phone')}</span>
                     <p> 0749/662.007</p>
                     <p> 0751/041.087</p>
                   </div>
@@ -99,7 +102,7 @@ export default function Contact() {
                     />
                   </svg>
                   <div className='leading-relaxed'>
-                    <span className='text-sm text-coolGray-500'>Adresă</span>
+                    <span className='text-sm text-coolGray-500'>{t('contact.address')}</span>
                     <p>Sântimbru, Șos. Națională,</p>
                     <p>nr.15, județul Alba</p>
                   </div>
@@ -113,7 +116,7 @@ export default function Contact() {
                         <input
                           className='w-full p-4 text-xs font-semibold leading-none rounded outline-none bg-coolGray-50'
                           type='text'
-                          placeholder='Subiect'
+                          placeholder={t('contact.subject')}
                           name="Subiect"
                         />
                       </div>
@@ -121,7 +124,7 @@ export default function Contact() {
                         <input
                           className='w-full p-4 text-xs font-semibold leading-none rounded outline-none bg-gray-50'
                           type='text'
-                          placeholder='Nume'
+                          placeholder={t('contact.name')}
                           nam="Nume"
                         />
                       </div>
@@ -151,7 +154,7 @@ export default function Contact() {
                       <textarea
                         className='w-full h-full p-4 text-xs font-semibold leading-none resize-none bg-blueGray-50 rounded outline-none bg-gray-50'
                         type='text'
-                        placeholder='Mesaj...'
+                        placeholder={t('contact.message')}
                         name="Mesaj"
                         defaultValue={''}
                       />
@@ -162,7 +165,7 @@ export default function Contact() {
                       className='py-4 px-8 text-sm text-white font-semibold leading-none rounded bg-green-600 hover:bg-green-800 border'
                       type='submit'
                     >
-                      Trimite
+                     {t('contact.send')}
                     </button>
                   </div>
                 </form>

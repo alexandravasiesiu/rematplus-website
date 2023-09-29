@@ -1,8 +1,10 @@
 import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router";
+import { useTranslation } from "react-i18next";
 
 function CookieBanner() {
+  const { t, i18n } = useTranslation();
   const [showBanner, setShowBanner] = useState(true);
   const navigate = useNavigate();
 
@@ -21,20 +23,17 @@ function CookieBanner() {
         <div class="p-10 w-full bg-white max-w-md border border-coolGray-100 rounded-md shadow-md">
           <div class="container mx-auto">
             <h3 class="mb-4 text-md text-coolGray-900 font-semibold">
-              Acest site web folosește cookie-uri
+              {t("cookie.title")}
             </h3>
             <p class="mb-4 text-coolGray-500 font-medium text-sm">
-              Acest site web folosește cookie-uri pentru a îmbunătăți experiența
-              utilizatorului. Prin utilizarea site-ului nostru web, sunteți de
-              acord cu toate cookie-urile în conformitate cu Politica noastră
-              privind cookie-urile.
+              {t("cookie.description")}
             </p>
             <a
               class="flex items-center mb-6 font-medium text-green-300 hover:text-green-600 text-sm"
               onClick={() => navigate("/privacypolicy")}
               href="#"
             >
-              <span class="mr-2">Află mai multe</span>
+              <span class="mr-2">{t("cookie.link")}</span>
               <svg
                 width="24"
                 height="24"
@@ -53,14 +52,14 @@ function CookieBanner() {
               href="#"
               onClick={acceptCookies}
             >
-              Accept
+              {t("cookie.accept")}
             </a>
             <a
               class="inline-block py-3 px-5 w-full leading-5 text-coolGray-800 bg-white hover:bg-coolGray-100 font-medium text-center focus:ring-2 focus:ring-coolGray-200 focus:ring-opacity-50 border border-coolGray-200 rounded-md shadow-sm"
               href="#"
               onClick={declineCookies}
             >
-              Refuz
+              {t("cookie.decline")}
             </a>
           </div>
         </div>

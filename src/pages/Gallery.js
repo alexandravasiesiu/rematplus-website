@@ -3,6 +3,7 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { useNavigate } from 'react-router-dom';
 import { Footer } from '../components/Footer';
 import { Navigation } from '../components/Navigation';
+import { useTranslation } from 'react-i18next';
 
 const meta = {
   title: '',
@@ -14,6 +15,7 @@ const meta = {
 
 export default function Gallery() {
   const navigate = useNavigate();
+  const { t } = useTranslation();
   
   return (
     <React.Fragment>
@@ -26,10 +28,10 @@ export default function Gallery() {
           <div className='container px-4 mx-auto'>
             <div className='max-w-lg mx-auto mb-12 text-center'>
               <h2 className='text-3xl md:text-4xl mt-2 mb-4 font-bold font-heading text-green-600'>
-                Galerie a Sustenabilității
+                {t('gallery.title')}
               </h2>
               <p className='leading-loose text-xl text-coolGray-500'>
-                O Călătorie Vizuală în Reciclare
+                {t('gallery.subtitle')}
               </p>
             </div>
             <div className='flex flex-wrap -mx-3 mb-6'>
