@@ -1,6 +1,6 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import App from "./App";
 
 import i18n from "./i18n";
@@ -11,10 +11,10 @@ const root = createRoot(container);
 
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter basename="/">
       <I18nextProvider i18={i18n}>
         <App />
       </I18nextProvider>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
