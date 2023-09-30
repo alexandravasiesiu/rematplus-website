@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.68e55275.css",
-    "main.js": "/static/js/main.c59b74be.js",
+    "main.js": "/static/js/main.fbacdef2.js",
     "static/media/remat-plus-logo-transparent.png": "/static/media/remat-plus-logo-transparent.5f3ae49d7af04ee96e3d.png",
     "static/media/background-image.jpg": "/static/media/background-image.3d636cbd41fcb04a99e2.jpg",
     "index.html": "/index.html",
     "main.68e55275.css.map": "/static/css/main.68e55275.css.map",
-    "main.c59b74be.js.map": "/static/js/main.c59b74be.js.map"
+    "main.fbacdef2.js.map": "/static/js/main.fbacdef2.js.map"
   },
   "entrypoints": [
     "static/css/main.68e55275.css",
-    "static/js/main.c59b74be.js"
+    "static/js/main.fbacdef2.js"
   ]
 }
