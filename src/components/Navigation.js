@@ -15,41 +15,35 @@ export function Navigation() {
       <section className="bg-white">
         <nav className="flex justify-between px-4 p-8">
           <div className="flex items-center">
-            <a
-              onClick={() => {
-                navigate("/");
-              }}
-              href="#"
+            <Link
+              to="/"
             >
               <img className="h-10" src={logo} />
-            </a>
+            </Link>
             <ul className="hidden xl:flex ml-24">
               <li className="mr-12">
-                <a
+                <Link
                   className="hover:text-coolGray-900 font-medium text-green-600"
-                  onClick={() => navigate("/gallery")}
-                  href="#"
+                  href="/gallery"
                 >
                   {t('menu.gallery')}
-                </a>
+                </Link>
               </li>
               <li className="mr-12">
-                <a
+                <Link
                   className="hover:text-coolGray-900 font-medium text-green-600"
-                  // onClick={() => navigate("/blog")}
-                  href="#"
+                  to="#"
                 >
                     {t('menu.articles')}
-                </a>
+                </Link>
               </li>
               <li className="mr-12">
-                <a
+                <Link
                   className="hover:text-coolGray-900 font-medium text-green-600"
-                  // onClick={() => navigate("/services")}
-                  href="#"
+                  to="#"
                 >
                     {t('menu.services')}
-                </a>
+                </Link>
               </li>
               <li>
                 <Link
@@ -106,44 +100,36 @@ export function Navigation() {
               </a>
               <ul>
                 <li>
-                  <a
+                  <Link
                     className="block py-3 px-4 hover:text-coolGray-900 font-medium text-green-600 hover:bg-coolGray-50 rounded-md"
-                    onClick={() => {
-                      navigate("/gallery");
-                    }}
+                    to="/gallery"
                   >
                     {t('menu.gallery')}
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     className="block py-3 px-4 hover:text-coolGray-900 font-medium text-green-600 hover:bg-coolGray-50 rounded-md"
-                    // onClick={() => {
-                    //   navigate("/blog");
-                    // }}
+                    to="#"
                   >
                     {t('menu.articles')}
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     className="block py-3 px-4 hover:text-coolGray-900 font-medium text-green-600 hover:bg-coolGray-50 rounded-md"
-                    // onClick={() => {
-                    //   navigate("/services");
-                    // }}
+                    to="#"
                   >
                     {t('menu.services')}
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     className="block py-3 px-4 hover:text-coolGray-900 font-medium text-green-600 hover:bg-coolGray-50 rounded-md"
-                    onClick={() => {
-                      navigate("/");
-                    }}
+                    href="/contact"
                   >
                     {t('menu.contact')}
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </nav>
