@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../assets/images/remat-plus-logo-transparent.png";
 import { useState } from "react";
 import { LanguageSwitcher } from "./LanguageSwitcher";
@@ -52,13 +52,12 @@ export function Navigation() {
                 </a>
               </li>
               <li>
-                <a
+                <Link
                   className="hover:text-coolGray-900 font-medium text-green-600"
-                  onClick={() => navigate("/contact")}
-                  href="#"
+                  to="/contact"
                 >
                     {t('menu.contact')}
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
