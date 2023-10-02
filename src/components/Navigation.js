@@ -3,12 +3,14 @@ import logo from "../assets/images/remat-plus-logo-transparent.png";
 import { useState } from "react";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { useTranslation } from 'react-i18next';
+import isMobile from "../hooks/isMobile";
 
 export function Navigation() {
   const navigate = useNavigate();
   const { t } = useTranslation();
 
   const [menuOpen, setMenuOpen] = useState(false);
+  const isMobileDevice = isMobile();
 
   return (
     <>
@@ -55,7 +57,8 @@ export function Navigation() {
               </li>
             </ul>
           </div>
-         <LanguageSwitcher />
+          {!isMobileDevice && <LanguageSwitcher /> }
+         
           <button
             className="navbar-burger self-center xl:hidden"
             onClick={() => setMenuOpen(true)}
@@ -98,6 +101,9 @@ export function Navigation() {
               >
                 <img className="h-8" src={logo} alt="" />
               </a>
+              
+              <LanguageSwitcher />
+              
               <ul>
                 <li>
                   <Link

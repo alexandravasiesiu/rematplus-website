@@ -19,7 +19,7 @@ export function LanguageSwitcher() {
 
   return (
     <>
-      <div className="hidden xl:flex items-center flex flex-wrap gap-2 relative">
+      <div className="xl:flex items-center flex flex-wrap gap-2 relative">
         <button
           id="dropdownDefaultButton"
           data-dropdown-toggle="dropdown"

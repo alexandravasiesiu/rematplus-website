@@ -118,7 +118,7 @@ export function Footer() {
               </p>
             </div>
             <div className="w-full md:w-1/2">
-              <div className="flex flex-wrap md:justify-end -mx-5">
+              <div className="flex flex-wrap md:justify-end">
                 <div class="sm:w-auto flex items-center font-medium">
                   <a class="text-coolGray-900" href="#" onClick={() => ( navigate('/privacypolicy') )}>
                     {t('footer.privacy')}
