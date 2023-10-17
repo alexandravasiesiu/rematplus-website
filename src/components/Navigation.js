@@ -26,7 +26,7 @@ export function Navigation() {
               <li className="mr-12">
                 <Link
                   className="hover:text-coolGray-900 font-medium text-green-600"
-                  href="/gallery"
+                  to="/gallery"
                 >
                   {t('menu.gallery')}
                 </Link>

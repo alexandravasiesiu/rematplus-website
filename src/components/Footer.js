@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../assets/images/remat-plus-logo-transparent.png";
 import { useTranslation } from 'react-i18next';
 
@@ -30,37 +30,33 @@ export function Footer() {
                 </h3>
                 <ul className="flex-col">
                   <li className="mb-4 flex">
-                    <a
+                    <Link
                       className="text-coolGray-500 hover:text-coolGray-900 font-medium"
-                      onClick={() => navigate("/gallery")}
-                      href="#"
+                      to="/gallery"
                     >
                       {t('menu.gallery')}
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-4">
-                    <a
+                    <Link
                       className="inline-block text-coolGray-500 hover:text-coolGray-900 font-medium"
-                      // onClick={() => navigate("/blog")}
-                      href="#"
+                      to="#"
                     >
                       {t('menu.articles')}
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-4">
-                    <a
+                    <Link
                       className="inline-block text-coolGray-500 hover:text-coolGray-900 font-medium"
-                      // onClick={() => navigate("/services")}
-                      href="#"
+                      to="#"
                     >
                       {t('menu.services')}
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-4">
                     <a
                       className="inline-block text-coolGray-500 hover:text-coolGray-900 font-medium"
-                      onClick={() => navigate("/contact")}
-                      href="#"
+                      to="/contact"
                     >
                       {t('menu.contact')}
                     </a>
@@ -99,13 +95,12 @@ export function Footer() {
               </div>
             </div>
             <div className="px-4 mb-16 lg:mb-0 md:w-1/2 w-full flex md:justify-end justify-center">
-              <a
+              <Link
                 className="inline-block mb-4"
-                onClick={() => navigate("/")}
-                href="#"
+                to="/"
               >
                 <img className="h-10" src={logo} alt="" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
