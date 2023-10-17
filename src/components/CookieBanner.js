@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { useNavigate } from "react-router";
+import { Link, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 function CookieBanner() {
@@ -28,10 +28,9 @@ function CookieBanner() {
             <p class="mb-4 text-coolGray-500 font-medium text-sm">
               {t("cookie.description")}
             </p>
-            <a
+            <Link
               class="flex items-center mb-6 font-medium text-green-300 hover:text-green-600 text-sm"
-              onClick={() => navigate("/privacypolicy")}
-              href="#"
+              to="/privacypolicy"
             >
               <span class="mr-2">{t("cookie.link")}</span>
               <svg
@@ -46,7 +45,7 @@ function CookieBanner() {
                   fill="currentColor"
                 ></path>
               </svg>
-            </a>
+            </Link>
             <a
               class="inline-block py-3 px-5 mb-4 w-full leading-5 text-white bg-green-300 hover:bg-green-600 font-medium text-center focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 border border-transparent rounded-md shadow-sm"
               href="#"
