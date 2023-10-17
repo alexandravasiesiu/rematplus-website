@@ -54,12 +54,12 @@ export function Footer() {
                     </Link>
                   </li>
                   <li className="mb-4">
-                    <a
+                    <Link
                       className="inline-block text-coolGray-500 hover:text-coolGray-900 font-medium"
                       to="/contact"
                     >
                       {t('menu.contact')}
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -115,9 +115,9 @@ export function Footer() {
             <div className="w-full md:w-1/2">
               <div className="flex flex-wrap md:justify-end">
                 <div class="sm:w-auto flex items-center font-medium">
-                  <a class="text-coolGray-900" href="#" onClick={() => ( navigate('/privacypolicy') )}>
+                  <Link class="text-coolGray-900" to="/privacypolicy">
                     {t('footer.privacy')}
-                  </a>
+                  </Link>
                 </div>
                 <div className="px-5 flex items-center">
                   <a
