@@ -13,6 +13,7 @@ import AboutDe from "../content/about/About.de";
 import EcologyRo from "../content/ecology/Ecology.ro";
 import EcologyEn from "../content/ecology/Ecology.en";
 import EcologyDe from "../content/ecology/Ecology.de";
+import Video from "../components/Video";
 
 const meta = {
   title: "",
@@ -170,6 +171,8 @@ export default function Index() {
         {i18next.language === "ro" && <AboutRo />}
         {i18next.language === "en" && <AboutEn />}
         {i18next.language === "de" && <AboutDe />}
+
+        <Video />
 
         <div className="bg-white">
           <div className="wave-top w-full text-yellow-50">
