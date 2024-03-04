@@ -7,7 +7,7 @@ const Video = () => {
   return (
     <>
     <section className="pb-20 bg-white flex justify-center">
-      <video src={src} controls autoplay="true" muted className="rounded-lg shadow-md border-green-600 border-4 w-2/3">
+      <video src={src} controls autoplay="true" muted className="rounded-lg shadow-md border-green-600 border-4 w-5/6 lg:w-2/3">
         Sorry, your browser doesn't support embedded videos.
       </video>
       </section>

@@ -914,6 +914,10 @@ video {
   width: 1.25rem;
 }
 
+.w-5\/6 {
+  width: 83.333333%;
+}
+
 .w-52 {
   width: 13rem;
 }
@@ -1794,6 +1798,10 @@ video {
 
   .lg\:w-16 {
     width: 4rem;
+  }
+
+  .lg\:w-2\/3 {
+    width: 66.666667%;
   }
 
   .lg\:max-w-3xl {
