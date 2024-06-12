@@ -259,7 +259,7 @@ export default function Index() {
               <div className="w-full md:w-1/2 px-4 mb-20 lg:mb-0">
                 <div className="max-w-md mx-auto">
                   <h2 className="mb-4 text-3xl md:text-4xl text-coolGray-900 font-bold tracking-tighter">
-                    Legislație
+                  {t("index.legislation.certifications.title")}
                   </h2>
                   <ul className="mb-8">
                     <li className="flex items-center mb-4">
@@ -321,6 +321,51 @@ export default function Index() {
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section className="bg-white overflow-hidden pb-10">
+          <div className="container px-4 mx-auto">
+          <div className="text-center">
+                <div className="flex flex-wrap justify-center -mx-4">
+                  <div className="w-full md:w-1/3 lg:w-1/4 px-4 mb-8 lg:mb-0 flex justify-center">
+                    
+                      <img
+                        className='w-1/2 object-cover'
+                        src='images\WhatsApp Image 2024-06-03 at 09.48.38.jpeg'
+                        alt=''
+                      />
+                    
+                  </div>
+                  <div className="w-full md:w-1/3 lg:w-1/4 px-4 mb-8 lg:mb-0 flex justify-center">
+
+                    <img
+                      className='w-1/2 object-cover'
+                      src='images\WhatsApp Image 2024-06-03 at 09.48.38 (1).jpeg'
+                      alt=''
+                    />
+
+                  </div>
+                  <div className="w-full md:w-1/3 lg:w-1/4 px-4 mb-8 lg:mb-0 flex justify-center">
+
+                    <img
+                      className='w-1/2 object-cover'
+                      src='images\WhatsApp Image 2024-06-03 at 09.48.38 (2).jpeg'
+                      alt=''
+                    />
+
+                  </div>
+                  <div className="w-full md:w-1/3 lg:w-1/4 px-4 flex justify-center">
+
+                    <img
+                      className='w-1/2 object-cover'
+                      src='images\WhatsApp Image 2024-06-03 at 09.48.38 (3).jpeg'
+                      alt=''
+                    />
+
+                  </div>
+                </div>
+              </div>
           </div>
         </section>
         <Footer />
